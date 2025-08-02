@@ -34,8 +34,8 @@ void calc()
 	}
 	for (i = 0; i < COUNT; i++)
 	{
-		vol_calc[i] = (need_con[i] * vol[i] * mw[i]) * (1e-6) / (con[0]);
-	}
+		vol_calc[i] = (need_con[i] * vol[i] * mw[i]) * (1e-6) / (con[i]);
+	}i
 	for (i = 0; i < COUNT; i++)
 	{
 		printf("第 %d 组需要加的蛋白的体积(μL)：%.2lf\n", i + 1, vol_calc[i]);
@@ -46,4 +46,5 @@ int main()
 	hello();
 	calc();
 	return 0; 
+
 }
